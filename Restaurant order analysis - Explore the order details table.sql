@@ -4,7 +4,7 @@ use reataurant_db;
 select * from order_details;
 
 -- 2.) what is the date range of the table? 
-
+select min(order_date), max(order_date) from order_details;
 -- 3.) how many orders were made in this date range? 
 select count(distinct order_id) from order_details;
 
